@@ -21,10 +21,10 @@ module.exports = defineConfig({
           {
             resolve: "@medusajs/medusa/file-s3",
             id: "s3",
+            options: {}
           },
         ],
       },
     },
   ],
-
 })
