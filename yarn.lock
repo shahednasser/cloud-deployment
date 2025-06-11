@@ -2778,6 +2778,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@medusajs/draft-order@npm:^0.0.11":
+  version: 0.0.11
+  resolution: "@medusajs/draft-order@npm:0.0.11"
+  dependencies:
+    "@ariakit/react": ^0.4.15
+    "@hookform/resolvers": 3.4.2
+    "@medusajs/js-sdk": 2.8.3
+    "@tanstack/react-query": 5.64.2
+    "@uiw/react-json-view": ^2.0.0-alpha.17
+    date-fns: ^3.6.0
+    match-sorter: ^6.3.4
+    radix-ui: 1.1.2
+    react-hook-form: 7.49.1
+  peerDependencies:
+    "@medusajs/admin-sdk": 2.8.3
+    "@medusajs/cli": 2.8.3
+    "@medusajs/framework": 2.8.3
+    "@medusajs/icons": 2.8.3
+    "@medusajs/medusa": 2.8.3
+    "@medusajs/test-utils": 2.8.3
+    "@medusajs/ui": 4.0.11
+    "@mikro-orm/cli": 6.4.3
+    "@mikro-orm/core": 6.4.3
+    "@mikro-orm/knex": 6.4.3
+    "@mikro-orm/migrations": 6.4.3
+    "@mikro-orm/postgresql": 6.4.3
+    awilix: ^8.0.1
+    lodash: ^4.17.21
+    pg: ^8.13.0
+    react-router-dom: 6.20.1
+  checksum: 19346d110fe75f58075f1ae1819f7654aae82fb4718d90fd10721ce08400cc048a431217aed18d79c8e38a5e11de1c1fe61bda65987829510252d858baf3e806
+  languageName: node
+  linkType: hard
+
 "@medusajs/event-bus-local@npm:2.8.4":
   version: 2.8.4
   resolution: "@medusajs/event-bus-local@npm:2.8.4"
@@ -2950,6 +2984,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@medusajs/js-sdk@npm:2.8.3":
+  version: 2.8.3
+  resolution: "@medusajs/js-sdk@npm:2.8.3"
+  dependencies:
+    "@medusajs/types": 2.8.3
+    fetch-event-stream: ^0.1.5
+    qs: ^6.12.1
+  checksum: a1f852df6b05260e9899ec040c94c1092b3b3f868ad5dae5fca21fcf7c0719f64bdfb0373acf5b161716fbd286b49aaf52e81be0927c83d8e95b97206f35487f
+  languageName: node
+  linkType: hard
+
 "@medusajs/js-sdk@npm:2.8.4":
   version: 2.8.4
   resolution: "@medusajs/js-sdk@npm:2.8.4"
@@ -3004,6 +3049,32 @@ __metadata:
     "@mikro-orm/postgresql": 6.4.3
     awilix: ^8.0.1
   checksum: 6a33ffd3e4240be0f87c6212698607671d6ffb4c9bf2e7a904c0809bfcf9f874fab824f94b1ac01eea902f784e4c2eb03eb1d5ca84fd8012e863a73bb883ac3d
+  languageName: node
+  linkType: hard
+
+"@medusajs/loyalty-plugin@npm:^0.0.6":
+  version: 0.0.6
+  resolution: "@medusajs/loyalty-plugin@npm:0.0.6"
+  peerDependencies:
+    "@medusajs/admin-sdk": "*"
+    "@medusajs/cli": "*"
+    "@medusajs/framework": "*"
+    "@medusajs/icons": "*"
+    "@medusajs/js-sdk": "*"
+    "@medusajs/medusa": "*"
+    "@medusajs/test-utils": "*"
+    "@medusajs/ui": "*"
+    "@mikro-orm/cli": 6.4.3
+    "@mikro-orm/core": 6.4.3
+    "@mikro-orm/knex": 6.4.3
+    "@mikro-orm/migrations": 6.4.3
+    "@mikro-orm/postgresql": 6.4.3
+    awilix: ^8.0.1
+    date-fns: ^3.6.0
+    lodash: ^4.17.21
+    pg: ^8.13.0
+    react-router-dom: 6.20.1
+  checksum: 2092563a0fc20c5eaef0916b0f5a11103e38319dda374f2ba1946ba4785448f6f779a3f290df8069efad0259887342613eb91068ebc70b5370d0ccb82c52813c
   languageName: node
   linkType: hard
 
@@ -3360,6 +3431,24 @@ __metadata:
     "@medusajs/medusa":
       optional: true
   checksum: fee870b15a4811ab9eae869b0c3d89be49a82fbb1fb5493a0c951615eb1c85a8b32ebb7761e9ed6b24fe56cb2c4e637212117f991500f95c4dd1f80350319456
+  languageName: node
+  linkType: hard
+
+"@medusajs/types@npm:2.8.3":
+  version: 2.8.3
+  resolution: "@medusajs/types@npm:2.8.3"
+  dependencies:
+    bignumber.js: ^9.1.2
+  peerDependencies:
+    awilix: ^8.0.1
+    ioredis: ^5.4.1
+    vite: ^5 || ^6
+  peerDependenciesMeta:
+    ioredis:
+      optional: true
+    vite:
+      optional: true
+  checksum: ece2c080587c213dbb9018a516791ea8841b2ac0587863d3be60a76165abd29932fdcfdb218591b565e507c11bc517f0e722a127fff3410aeadb95607256e563
   languageName: node
   linkType: hard
 
@@ -9150,7 +9239,9 @@ __metadata:
   dependencies:
     "@medusajs/admin-sdk": 2.8.4
     "@medusajs/cli": 2.8.4
+    "@medusajs/draft-order": ^0.0.11
     "@medusajs/framework": 2.8.4
+    "@medusajs/loyalty-plugin": ^0.0.6
     "@medusajs/medusa": 2.8.4
     "@medusajs/test-utils": 2.8.4
     "@mikro-orm/cli": 6.4.3
