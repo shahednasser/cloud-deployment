@@ -15,9 +15,14 @@ module.exports = defineConfig({
   },
   modules: [
     {
-      resolve: "@medusajs/medusa/event-bus-redis",
-      options: { 
-        redisUrl: process.env.EVENTS_REDIS_URL,
+      resolve: "@medusajs/medusa/file",
+      options: {
+        providers: [
+          {
+            resolve: "@medusajs/medusa/file-s3",
+            id: "s3",
+          },
+        ],
       },
     },
   ],
