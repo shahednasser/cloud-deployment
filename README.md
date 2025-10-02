@@ -56,6 +56,8 @@ Join our [Discord server](https://discord.com/invite/medusajs) to meet other com
 
 ## Other channels
 
+
+
 - [GitHub Issues](https://github.com/medusajs/medusa/issues)
 - [Twitter](https://twitter.com/medusajs)
 - [LinkedIn](https://www.linkedin.com/company/medusajs)
