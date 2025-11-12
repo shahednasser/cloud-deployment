@@ -2,6 +2,8 @@ import type {
   SubscriberArgs,
   SubscriberConfig,
 } from "@medusajs/framework"
+import { render, pretty } from '@react-email/render';
+import getInviteTemplate from "../emails/invite-user";
 
 export default async function productCreateHandler({
   event: { data },
@@ -34,14 +36,18 @@ export default async function productCreateHandler({
 
   const notificationModule = container.resolve("notification");
 
+  const html = await pretty(
+    await render(getInviteTemplate({
+      inviteUrl,
+      storeName: store.name,
+    }))
+  )
+
   await notificationModule.createNotifications({
     to: invite.email,
-    template: "medusa-cloud-invite-user",
     channel: "email",
-    data: {
-      inviteUrl,
-    },
     content: {
+      html,
       subject: `You've been invited to join ${store.name}`,
     },
   });
