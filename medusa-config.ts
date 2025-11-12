@@ -13,35 +13,13 @@ module.exports = defineConfig({
       cookieSecret: process.env.COOKIE_SECRET || "supersecret",
     }
   },
-  modules: [
-    // {
-    //   resolve: "@medusajs/medusa/file",
-    //   options: {
-    //     providers: [
-    //       {
-    //         resolve: "@medusajs/medusa/file-s3",
-    //         id: "s3",
-    //         options: {
-    //           authentication_method: "s3-iam-role",
-    //           // prefix: process.env.S3_PREFIX,
-    //           // file_url: process.env.S3_FILE_URL,
-    //           // region: process.env.S3_REGION,
-    //           // bucket: process.env.S3_BUCKET,
-    //           // endpoint: process.env.S3_ENDPOINT,
-    //         },
-    //       },
-    //     ],
-    //   },
-    // },
-  ],
   plugins: [
     {
       resolve: "@medusajs/loyalty-plugin",
       options: {},
     },
-    {
-      resolve: "@medusajs/draft-order",
-      options: {},
-    },
   ],
+  featureFlags: {
+    caching: true
+  }
 })
