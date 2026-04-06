@@ -9,7 +9,6 @@ export default async function productCreateHandler({
   event: { data },
   container,
 }: SubscriberArgs<{ id: string }>) {
-  tes
   const query = container.resolve("query");
 
   const {
