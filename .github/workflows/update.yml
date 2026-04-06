@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Update Medusa
-        uses: medusajs/medusa-update-action@v0.0.2
+        uses: medusajs/medusa-update-action@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
